@@ -14,7 +14,6 @@ config :discuss, Discuss.Endpoint,
   watchers: [node: ["node_modules/brunch/bin/brunch", "watch", "--stdin",
                     cd: Path.expand("../", __DIR__)]]
 
-
 # Watch static and templates for browser reloading.
 config :discuss, Discuss.Endpoint,
   live_reload: [
@@ -36,8 +35,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :discuss, Discuss.Repo,
   adapter: Ecto.Adapters.MySQL,
-  username: "root",
+  username: "jackjoe",
   password: "",
-  database: "discuss_dev",
+  database: "elixir-udemy-discuss",
   hostname: "localhost",
   pool_size: 10
